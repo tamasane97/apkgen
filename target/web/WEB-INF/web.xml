@@ -4,12 +4,16 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
   <servlet>
   	<servlet-name>rundeckTrigger</servlet-name>
   	<servlet-class>web.rundeckTrigger</servlet-class>
   </servlet>
+  
+  
   <servlet-mapping>
   	<servlet-name>rundeckTrigger</servlet-name>
   	<url-pattern>/rundeckTrigger</url-pattern>
   </servlet-mapping>
+  
 </web-app>
