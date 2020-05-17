@@ -36,7 +36,7 @@ public class rundeckTrigger extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		String urlLink = req.getParameter("urlLink");
 		String appName = req.getParameter("appName");
-		String[] appUrl = urlLink.trim().split("\\.");
+		String[] appUrl = urlLink.replaceAll("/", "").trim().split("\\.");
 		try {
 			String FILE_URL = "http://142.93.210.19:8000/"+appName+appUrl[1]+".apk";
 	        InputStream in = new URL( FILE_URL ).openStream();
