@@ -1,0 +1,68 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.backimg{
+	height:100vh;
+	background-image:linear-gradient(rgba(15,98,222,0.12),rgba(228,231,234,0.8)),
+	url(icon/Androidlogo.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+/* .wrapper img {
+  float: left;
+  max-width: auto;
+  height: auto;
+  background: #cc0000;
+}
+
+.wrapper h1 {
+  position: relative;
+  top: 25px;
+  left: 10px;
+}  */
+
+
+/* div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+#logo {
+	float:left;
+	width:100px;
+	height:100px;
+	margin-top:10px;
+	margin-left:10px;
+	background-color: #ccc;
+	background-image: url(icon/Applogo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#header {
+
+}
+
+#content{
+	
+}
+ */
