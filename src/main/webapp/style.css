@@ -1,68 +1,194 @@
-@charset "UTF-8";
+
 *{
 	margin: 0;
 	padding: 0;
+	/*font-family: 'Lato', sans-serif;*/
+	box-sizing: border-box;
+}
+.section-1{
+	width: 100%;
+	height: 400px;
+	z-index: 1000;
+}
+.section-2{
+	width: 100%;
+	height: 1400px;
+	z-index: 500;
 }
 
-.backimg{
-	height:100vh;
-	background-image:linear-gradient(rgba(15,98,222,0.12),rgba(228,231,234,0.8)),
-	url(icon/Androidlogo.jpg);
-	background-position: center;
-	background-size: cover;
-}
-.column {
-  float: left;
-  width: 20%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-@media screen and (max-width: 500px) {
-  .column {
-    width: 100%;
-  }
-}
-.wrapper img {
-  float: left;
-  max-width: auto;
-  height: auto;
-  background: #cc0000;
-}
-
-.wrapper h1 {
-  position: relative;
-  top: 25px;
-  left: 10px;
-} 
 
 
-/* div {
-  height: 200px;
-  width: 50%;
-  background-color: powderblue;
+#container{
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	background: rgba(0,0,0,0.416);
 }
-#logo {
-	float:left;
-	width:100px;
-	height:100px;
-	margin-top:10px;
-	margin-left:10px;
-	background-color: #ccc;
-	background-image: url(icon/Applogo.png);
-	background-position: center;
+#slider{
+	width: 300%;
+	height: 100%;
+	display: flex;
+	transition: .5s;
+}
+.slide{
+	width: 33.33%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: linear-gradient(rgba(15,98,222,0.12),rgba(228,231,234,0.8));
+	background-blend-mode: multiply;
+}
+#slide1{
+	background-color:#160303;
+	/*filter: blur(8px);*/
 }
 
-#header {
-
+#slide2{
+	background-image: url(icon/appback.jpg);
+}
+#slide3{
+	background-image: url(icon/devops.jpg);
+}
+.content{
+	width: 80%;
+	height: 550px;
+}
+.line{
+	width: 100%;
+	height: 5px;
+	background: #02c98d;
+	transition: .5s;
 }
 
-#content{
+.heading,.des{
+	overflow: hidden;
+}
+.heading{
+	height: 70px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-size: 35px;
+	letter-spacing: 3px;
+	word-spacing: 6px;
+	color: #072aec;
+	line-height: 70px;
+	transition: .8s;
+	position: relative;
+}
+p{
+	text-transform: capitalize; ;
+	color: #afb1ad;
+	letter-spacing: 1px;
+	word-spacing: 2px;
+	line-height: 40px;
+	position: relative;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+	line-height: 100px;
+
+}
+.img-applogo{
+	float: left;
+	width: 170px;
+	height: auto;
+	background: #555; 
+	padding: 2px 2px 2px; 
+}
+
+
+#menu{
+	width: 70%;
+	height: 100%;
+}
+ul{
+	white-space: 100%;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
 	
 }
- */
+li{
+	line-height: 100px;
+	text-align-last: right; 
+}
+
+a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#social{
+	position: fixed;
+	bottom: 30px;
+	left: 0;	
+}
+
+.so{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+.soc{
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+i{
+	line-height: 100px;
+	text-align: center;
+}
+
+#creator{
+	position: fixed;
+	bottom: 30px;
+	right: 15px;	
+}
+
+.create{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+}
+.cre{
+	width: 100%;
+	height: 50px;
+	background: #a5a0a0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cre,.a{
+	text-transform: capitalize;
+	text-decoration: none;
+	line-height: 0px;
+	text-align: center;
+	font-weight: lighter;
+	color: black;
+}
+
+
+
+
+
