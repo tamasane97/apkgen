@@ -21,7 +21,7 @@ public class rundeckTrigger extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 		String urlLink = req.getParameter("urlLink");
 		String appName = req.getParameter("appName");
-		String email = req.getParameter("Email");
+		String email = req.getParameter("emailid");
 		ConnectionFactory factory=new ConnectionFactory();
 
 		try
