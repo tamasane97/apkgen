@@ -1,113 +1,72 @@
-<!DOCKTYPE html>
-<html>
+<<!doctype html>
+<html lang="en">
 <head>
-
-	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
-	<script src="main.js"></script>
-	<script src="https://kit.fontawesome.com/2010b82128.js"></script>
-	<link rel= "stylesheet" href="style.css">
 	<meta charset="utf-8">
-	<title>APK-Gen :: Automated generator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="icon/favicon.ico">
 
+	<title>APKGen :: Android App Generator</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="style.css" rel="stylesheet">
 </head>
-<body>
-<section class="section-1">
-	<nav>
-		<div id="logo" style="margin-left: -80px" >
-			<img class="img-applogo" src="icon/Applogo.png">
-			
+
+<body class="text-center">
+
+
+<header>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<img src="icon/favicon.ico" width="60" height="60"/>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/tamasane/apkgen">Github</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="aboutus.html">About Us</a>
+				</li>
+			</ul>
 		</div>
-		<dir id="menu">
-			<ul>
-				<li><a href="#">About this tool</a></li>
-				<li><a href="#">User Guide</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>	
-		</dir> 
 	</nav>
-
-	<div id="container">
-		<div id="slider">
-			
-			<div class="slide" id="slide1">
-				<div class="content">
-					<div class="heading">
-						<h1 style="text-align: center;">AUTOMATIC APK GENERATOR </h1>	
-					</div>
-					<div class="line"></div>
-					<div class="des" >
-						<p style="text-align:center;">This application helps to generate apk automatically using Cordova.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="slide" id="slide2">
-				<div class="content">
-					<div class="heading">
-						<h1>APK generates here!!!</h1>	
-					</div>
-					<div class="line"></div>
-					<div class="des">
-						<p>This application helps to generate apk automatically using Cordova.</p>
-					</div>
-				</div>
-			</div>	
-			
-			<div class="slide" id="slide3">
-				<div class="content">
-					<div class="heading">
-						<h1>Contains Developer detail!!!</h1>	
-					</div>
-					<div class="line"></div>
-					<div class="des">
-						<p>details</p>
-					</div> 
-				</div>
-			</div>	
-
-		</div>
-		
-	</div>
-	</section>
-<section class="section-2">
-	<div id="social">
-		<ul class="so">
-			
-			<a href="https://github.com/tamasane/apkgen" target="_blank">
-				<div class="github button-big" style="margin-left: 30px; margin-bottom: 100px">
-					<i class="fa fa-github" style="font-size:50px;color:red"></i>
-				</div>
-			</a>
-		</ul>
-	</div>
+</header>
 
 
+<form method="GET" action="rundeckTrigger" class="form-signin" >
+	<img class="mb-4" src="icon/favicon.ico" alt="" width="160" height="160">
+	<h1 class="h3 mb-3 font-weight-normal">Please enter the details</h1>
+	<label for="inputEmail" class="sr-only">Email address</label>
+	<input type="email" name="emailid" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+	<label for="inputAppName" class="sr-only">App Name</label>
+	<input type="text" name="appName" id="inputAppName" class="form-control" placeholder="App Name" required>
+	<label for="inputAppUrl" class="sr-only">App Link</label>
+	<input type="text" name="urlLink" id="inputAppUrl" class="form-control" placeholder="App URL" onchange="validateURL();" required>
+	<br/>
+	<button id="btnrun" class="btn btn-lg btn-primary btn-block" type="submit" disabled>Create Your Application</button>
 
-	<div id="creator">
-		<ul class="create">
-			<h2 style="color:white;font-weight: lighter;">Developed by-</h2>
-			<li><a class="cre" href="https://github.com/TarunKumarRai/apkgen" target="_blank">Tarun Kumar Rai</a></li>
-			<li><a class="cre" href="https://github.com/tamasane/apkgen" target="_blank">Tushar Anil Masane</a></li>
-			<li><a class="cre" href="https://github.com/UttkarshJha/apkgen.git" target="_blank">Uttkarsh Jha</a></li>
-			<li><a class="cre" href="https://github.com/vbh-git" target="_blank">Vaibhav Sharma</a></li>
-		</ul>	
-	</div>
+	<p class="mt-5 mb-3 text-muted">APK Gen &copy; 2020</p>
+</form>
+
+<script src="index.jsp" type="text/javascript"> </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="popper.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-	<div>
-		<form method="get" action="rundeckTrigger">
-			<input name="appName" type="text" placeholder="Enter your app name"/>
-			<input name="urlLink" type="text" placeholder="Enter your app URL" onchange="validateURL();" />
-			<input type="text" name="emailid" placeholder="Enter your email here">
-			<input id="btnrun" type="submit" value="generate" disabled/>
-		</form>
-		<br/><br/>
-		<div id="info"></div>
-	</div>
-	<script src="index.jsp" type="text/javascript"> </script>
-	</div>
-</section>
 </body>
+</html>
 
 
+>
