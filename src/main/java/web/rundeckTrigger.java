@@ -1,26 +1,15 @@
 package web;
 
 import java.io.*;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
-
 import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.IOUtils;
-import org.apache.http.*;
-import org.apache.http.client.methods.*;
 import org.apache.http.impl.client.*;
-import org.apache.http.util.*;
 import org.json.simple.JSONObject;
-import org.rundeck.api.*;
-import org.rundeck.api.domain.*;
-import org.rundeck.api.domain.RundeckExecution.ExecutionStatus;
+
 
 @WebServlet
 public class rundeckTrigger extends HttpServlet {
