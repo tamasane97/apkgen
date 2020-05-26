@@ -27,7 +27,7 @@ public class rundeckTrigger extends HttpServlet {
 		try
 		{
 			factory.setHost("159.65.158.218");
-			factory.setPort(5672);
+			factory.setPort(15672);
 			factory.setUsername("admin");
 			factory.setPassword("admin");
 			Connection connection=factory.newConnection();
