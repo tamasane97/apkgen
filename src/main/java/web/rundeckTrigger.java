@@ -36,7 +36,7 @@ public class rundeckTrigger extends HttpServlet {
 			JSONObject jsonObject = new JSONObject();
 			jsonObject.put("urlLink",urlLink);
 			jsonObject.put("appName",appName);
-			jsonObject.put("Email",email);
+			jsonObject.put("emailid",email);
 			System.out.println(urlLink);
 			System.out.println(appName);
 			System.out.println(email);
