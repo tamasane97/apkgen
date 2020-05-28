@@ -85,7 +85,7 @@ public class rundeckTrigger extends HttpServlet {
 			"                    <a class=\"nav-link\" onclick=\"window.open('https://github.com/tamasane/apkgen');\">Github</a>\n" +
 			"                </li>\n" +
 			"                <li class=\"nav-item\">\n" +
-			"                    <a class=\"nav-link\" href=\"#\">About Us</a>\n" +
+			"                    <a class=\"nav-link\" href=\"aboutus.html\">About Us</a>\n" +
 			"                </li>\n" +
 			"            </ul>\n" +
 			"        </div>\n" +
